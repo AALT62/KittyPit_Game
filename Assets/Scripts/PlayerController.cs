@@ -51,8 +51,8 @@ public class PlayerController : MonoBehaviour
     private void SetupRigidbody()
     {
         rb.constraints = RigidbodyConstraints.FreezeRotationX | RigidbodyConstraints.FreezeRotationZ;
-        rb.drag = 5f;
-        rb.angularDrag = 10f;
+        rb.linearDamping = 5f;
+        rb.angularDamping = 10f;
         rb.interpolation = RigidbodyInterpolation.Interpolate;
     }
 
@@ -175,8 +175,8 @@ public class PlayerController : MonoBehaviour
                 deceleration * Time.deltaTime);
         }
 
-        currentVelocity.y = rb.velocity.y;
-        rb.velocity = currentVelocity;
+        currentVelocity.y = rb.linearVelocity.y;
+        rb.linearVelocity = currentVelocity;
     }
 
     private void OnDrawGizmosSelected()

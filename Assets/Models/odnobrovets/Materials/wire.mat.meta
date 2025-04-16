@@ -1,0 +1,16 @@
+fileFormatVersion: 2
+guid: 218b7e2e46fce6643a79176fb255d95a
+timeCreated: 1528493039
+licenseType: Store
+NativeFormatImporter:
+  mainObjectFileID: 2100000
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+AssetOrigin:
+  serializedVersion: 1
+  productId: 121646
+  packageName: Untitled
+  packageVersion: 1.0
+  assetPath: Assets/odnobrovets/Materials/wire.mat
+  uploadId: 252878
